@@ -60,7 +60,7 @@ public class Main extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// new JFrame to fill with panel
-				JFrame cheyFrame = new JFrame("Cheyane");
+				JFrame cheyFrame = new JFrame("Cheyanne");
 				JPanel cheyPanel = new JPanel();
 
 				// Can be any size- opens second window. (w,h)
@@ -70,9 +70,9 @@ public class Main extends JFrame {
 				// Path must be relative to res folder!
 				// src/res/nameoffile.extension
 				JLabel cheyPic = new JLabel(new ImageIcon("src/res/cheyCat.png"));
-				JLabel cheyName = new JLabel("•Name- Cheyanne Flickinger");
-				JLabel cheyEducation = new JLabel("•Education- Media Arts | CSS Certificate");
-				JLabel cheyJob = new JLabel("•Job Description- Makes things prettier");
+				JLabel cheyName = new JLabel("â€¢Name- Cheyanne Flickinger");
+				JLabel cheyEducation = new JLabel("â€¢Education- Media Arts | CSS Certificate");
+				JLabel cheyJob = new JLabel("â€¢Job Description- Makes things prettier");
 
 				// adding to frame
 				cheyFrame.add(cheyPanel);
