@@ -70,9 +70,9 @@ public class Main extends JFrame {
 				// Path must be relative to res folder!
 				// src/res/nameoffile.extension
 				JLabel cheyPic = new JLabel(new ImageIcon("src/res/cheyCat.png"));
-				JLabel cheyName = new JLabel("•Name- Cheyanne Flickinger");
-				JLabel cheyEducation = new JLabel("•Education- Media Arts | CSS Certificate");
-				JLabel cheyJob = new JLabel("•Job Description- Makes things prettier");
+				JLabel cheyName = new JLabel("*Name- Cheyanne Flickinger");
+				JLabel cheyEducation = new JLabel("*Education- Media Arts | CSS Certificate");
+				JLabel cheyJob = new JLabel("*Job Description- Makes things prettier");
 
 				// adding to frame
 				cheyFrame.add(cheyPanel);
