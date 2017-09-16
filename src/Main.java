@@ -133,10 +133,31 @@ public class Main extends JFrame {
 		panel.add(btnNewButton_2);
 
 		// Button for Chase
-		JButton btnNewButton_3 = new JButton("Chase LastName");
-		btnNewButton_3.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
+		JButton btnNewButton_3 = new JButton("Chase (Bartosz Byczynski)");
+        btnNewButton_3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // new JFrame to fill with panel
+                JFrame chaseFrame = new JFrame("Chase");
+                JPanel chasePanel = new JPanel();
+
+                // Can be any size- opens second window. (w,h)
+                chaseFrame.setSize(350, 450);
+
+                // Labels for information
+                // Path must be relative to res folder!
+                // src/res/nameoffile.extension
+                JLabel chasePic = new JLabel(new ImageIcon("src/res/dnd.png"));
+                JLabel chaseName = new JLabel("1. Name - Chase (Bartosz Byczynski)");
+                JLabel chaseEducation = new JLabel("2. Education - Computer Science");
+                JLabel chaseJob = new JLabel("3. Job Description - Experimenting with things");
+                // adding to frame
+                chaseFrame.add(chasePanel);
+                chasePanel.add(chasePic);
+                chasePanel.add(chaseName);
+                chasePanel.add(chaseEducation);
+                chasePanel.add(chaseJob);
+                chaseFrame.setVisible(true);
+            }
 		});
 		btnNewButton_3.setBounds(15, 200, 200, 50);
 		panel.add(btnNewButton_3);
