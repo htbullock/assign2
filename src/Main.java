@@ -87,9 +87,31 @@ public class Main extends JFrame {
 		panel.add(btnNewButton);
 
 		// Button for Hank
-		JButton btnNewButton_2 = new JButton("Hank LastName");
+		JButton btnNewButton_2 = new JButton("Hank Bullock");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				// new JFrame to fill with panel
+				JFrame hankFrame = new JFrame("Hank");
+				JPanel hankPanel = new JPanel();
+
+				// Can be any size- opens second window. (w,h)
+				hankFrame.setSize(250, 400);
+
+				// Labels for information
+				// Path must be relative to res folder!
+				// src/res/nameoffile.extension
+				JLabel hankPic = new JLabel(new ImageIcon("src/res/cheyCat.png"));
+				JLabel hankName = new JLabel("*Name- Hank Bullock");
+				JLabel hankEducation = new JLabel("*Education- Major MIS | Minor Computer Science");
+				JLabel hankJob = new JLabel("*Job Description- Student at UM");
+
+				// adding to frame
+				hankFrame.add(hankPanel);
+				hankPanel.add(hankPic);
+				hankPanel.add(hankName);
+				hankPanel.add(hankEducation);
+				hankPanel.add(hankJob);
+				hankFrame.setVisible(true);
 			}
 		});
 		btnNewButton_2.setBounds(15, 140, 200, 50);
