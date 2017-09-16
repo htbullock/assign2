@@ -33,7 +33,7 @@ public class Main extends JFrame {
 	public Main() {
 		setTitle("Clever 323");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 250, 325);
+		setBounds(100, 100, 300, 325);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -47,7 +47,22 @@ public class Main extends JFrame {
 		JButton btnNewButton_1 = new JButton("Cameron Gomke");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				JFrame camFrame = new JFrame("Cameron");
+				JPanel camPanel = new JPanel();
+				
+				camFrame.setSize(450, 450);
+				
+				JLabel camPic = new JLabel(new ImageIcon("src/res/cam.jpg"));
+				JLabel camName = new JLabel("* Name - Cameron Gomke");
+				JLabel camEducation = new JLabel("* Education - Working on Bachelors Degree in Computer Science");
+				JLabel camJob = new JLabel("* Job(s) - UC Game Room Desk Attendant, Robyn Berg's Assistant");
 
+				camFrame.add(camPanel);
+				camPanel.add(camPic);
+				camPanel.add(camName);
+				camPanel.add(camEducation);
+				camPanel.add(camJob);
+				camFrame.setVisible(true);
 			}
 		});
 
